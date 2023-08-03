@@ -64,7 +64,7 @@
             </div>
             <div class="action">
                 <div class="profile" onclick="menutoggle()">
-                    <img src="{{asset('img') .'/'.Auth::user()->img}}" alt="">
+                    <img src="{{asset('profilee') .'/'.Auth::user()->img}}" alt="">
                 </div>
                 <div class="menuu">
                     <h3>{{Auth::user()->name}}</h3>

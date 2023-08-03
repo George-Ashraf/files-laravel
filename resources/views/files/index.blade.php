@@ -3,11 +3,7 @@
 
 @section('content')
     <div class="myfiles">
-        @if (Session::has('done'))
-            <div class="alert text-center alert-success col-lg-5">
-                <p>{{ session::get('done') }}</p>
-            </div>
-        @endif
+
         <div class="container-fluid">
             <div class="row">
                 @forelse ($files as $file)
@@ -43,6 +39,11 @@
             </div>
         </div>
 
+        @if (Session::has('done'))
+        <div class="alert  col-lg-3">
+            <i class="fa-solid fa-check"></i>  <p>{{ session::get('done') }}</p>
+        </div>
 
+    @endif
     </div>
 @endsection

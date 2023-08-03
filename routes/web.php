@@ -47,6 +47,8 @@ Route::get('/download/{id}', [FilesController::class, 'download'])->name('file.d
 // user
 
 Route::get('/profile', [usercontroller::class, 'profile'])->name('user.profile');
+Route::post('/updateimg/{id}', [usercontroller::class, 'updateimg'])->name('user.updateimg');
+
 
 
 

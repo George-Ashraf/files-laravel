@@ -44,7 +44,7 @@
                     @enderror
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit confirm">Submit</button>
             </form>
 
         </div>
